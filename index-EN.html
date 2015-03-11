@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="robots" content="noindex">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="HTML5 and CSS3 quiz, come and test your skillz!" />
+		<title>HTML elements &amp; CSS properties quiz</title>
+		<link href='http://fonts.googleapis.com/css?family=Lobster&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="img/icon.png" type="image/ico">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/quiz.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html" title="HTML and CSS quiz"><img src="img/html5.png" alt="HTML5 logo" height="128" width="128" /><span id="logo">HTML elements &amp; CSS properties quiz</span><img src="img/css3.png" alt="CSS3 logo" height="128" width="128" /></a></h1>
+			<p>How well do you actually know HTML &amp; CSS?</p>
+		</header>
+		<article id="main-wrapper">
+			<noscript>You must have javascript to play.</noscript>
+			<div id="intro">
+				<h2>The rules:</h2>
+				<p>After the game starts you have 5 minutes to name the HTML elements / CSS properties. Right answers will automatically be taken. Well...what are you waiting for?</p>
+				<button type="button" id="start-html-button" title="Go go go!">HTML</button>
+				<button type="button" id="start-css-button" title="Go go go!">CSS</button>
+			</div>
+			<div id="quiz">
+				<progress max="300" value="300">
+
+				</progress>
+				<div id="countdown">
+				</div>
+				<input type="text" id="answer-input" autofocus="autofocus" />
+				<div id="remaining-container">Remaining: <span id="answers-left"></span></div>
+				<div id="correct">
+					<ul id="right-answers"></ul>
+				</div>
+				<button type="button" id="give-up-button" title="Loooooseeer">I give up...</button>
+			</div>
+			<div id="outro">
+				<p id="result-text">
+					Congratulations! Your score is <span id="score"></span>. 
+					Max score is: <span id="max-score"></span>
+				</p>
+				<p id="got-all">
+					Too bad you didn't get these:
+					<span id="unanswered"></span>
+				</p> 
+				<button type="button" id="play-again-button" title="Play again!">Try again?</button>
+				<div id="social">
+					<a href="http://www.facebook.com/sharer/sharer.php?u=http://littera.bg/htmlcssquiz/" target="_blank">Like</a>
+					<a id="tweet" href="" target="_blank">Tweet</a>
+					<a href="https://plus.google.com/share?url=http://littera.bg/htmlcssquiz/" target="_blank">+1</a>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<p>	
+				If you liked the quiz you can <a rel="external" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=PQGMY59X6G7AS" target="_blank">buy me a beer</a>.
+				Created by <a rel="author" target="_blank" href="http://littera.bg">Miroslav Kirov</a>.
+			</p>
+		</footer>
+	</body>
+</html>
+

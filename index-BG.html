@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+        <meta name="robots" content="noindex">		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="HTML5 и CSS3 куиз, ела и пробвай уменията си!" />	
+		<title>HTML елементи &amp; CSS пропъртита куиз</title>
+		<link href='http://fonts.googleapis.com/css?family=Lobster&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="icon" href="img/icon.png" type="image/ico">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="js/quiz.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1><a href="index.html" title="HTML и CSS куиз"><img src="img/html5.png" alt="HTML5 logo" height="128" width="128" /><span id="logo">HTML елементи &amp; CSS пропъртита куиз</span><img src="img/css3.png" alt="CSS3 logo" height="128" width="128" /></a></h1>
+			<p>Колко добре знаеш всъщност HTML &amp; CSS?</p>
+		</header>
+		<article id="main-wrapper">
+			<noscript>Трябва да имаш javascript за да играеш.</noscript>
+			<div id="intro">
+				<h2>Правилата:</h2>
+				<p>След като започне играта, ще имаш 5 минути да назовеш HTML елементите / CSS пропъртитата. Правилните отговори автоматично ще бъдат приети. Ами...хайде да започваме, а?</p>
+				<button type="button" id="start-html-button" title="Go go go!">HTML</button>
+				<button type="button" id="start-css-button" title="Go go go!">CSS</button>
+			</div>
+			<div id="quiz">
+				<progress max="300" value="300">
+
+				</progress>
+				<div id="countdown">
+				</div>
+				<input type="text" id="answer-input" autofocus="autofocus" />
+				<div id="remaining-container">Оставащи: <span id="answers-left"></span></div>
+				<div id="correct">
+					<ul id="right-answers"></ul>
+				</div>
+				<button type="button" id="give-up-button" title="Слабоооо">Отказвам се...</button>
+			</div>
+			<div id="outro">
+				<p id="result-text">
+					Поздравления! Твоят резултат е <span id="score"></span>. 
+					Максимален резултат: <span id="max-score"></span>
+				</p>
+				<p id="got-all">
+					Надявам се следващият път ще уцелиш и тези:
+					<span id="unanswered"></span>
+				</p>
+				<button type="button" id="play-again-button" title="Play again!">Опитай пак?</button>
+				<div id="social">
+					<a href="http://www.facebook.com/sharer/sharer.php?u=http://littera.bg/htmlcssquiz/" target="_blank">Like</a>
+					<a id="tweet" href="" target="_blank">Tweet</a>
+					<a href="https://plus.google.com/share?url=http://littera.bg/htmlcssquiz/" target="_blank">+1</a>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<p>	
+				Ако ти е харесала играта <a rel="external" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=PQGMY59X6G7AS" target="_blank">почерпи ме бира</a>.
+				Създадено от <a rel="author" target="_blank" href="http://littera.bg">Мирослав Киров</a>.
+			</p>
+		</footer>
+	</body>
+</html>
+
